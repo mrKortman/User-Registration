@@ -20,9 +20,9 @@
                     if(!empty($_POST))
                     {
                         // includes
-                        include("inc/settings.inc.php");
-                        include("inc/database.inc.php");
-                        include("inc/user.inc.php");
+                        require_once "inc/settings.inc.php";
+                        require_once "inc/database.inc.php";
+                        require_once "inc/user.inc.php";
 
                         // variables
                         $database = new Database();
